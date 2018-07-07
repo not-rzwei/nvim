@@ -43,6 +43,7 @@ if dein#load_state('~/.cache/dein')
   " Misc
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('houtsnip/vim-emacscommandline')
+  call dein#add('tpope/vim-commentary')
 
   call dein#end()
   call dein#save_state()
