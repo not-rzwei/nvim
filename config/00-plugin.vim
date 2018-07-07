@@ -86,6 +86,7 @@ let g:lightline = {
 
 " neoclide/vim-easygit
 let g:easygit_enable_command = 1
+let g:easygit_edit_edit_command = 'vsplit'
 
 " easymotion/vim-easymotion
 let g:EasyMotion_smartcase = 1

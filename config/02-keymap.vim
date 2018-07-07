@@ -6,12 +6,13 @@ noremap <space> <nop>
 let mapleader=" "
 noremap ; :
 noremap : ;
+imap jj <esc>
 nnoremap <silent> <leader><leader>w :w<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <leader><leader>q :q!<cr>
 nnoremap <silent> <leader>p :Lex<cr>
 cnoremap ww w !sudo tee % >/dev/null
-noremap <c-w>p :pclose<cr>
+noremap <silent> <c-w>p :pclose<cr>
 noremap <c-n> :bnext!<cr>
 
 " Pane Movement
