@@ -15,8 +15,13 @@ if dein#load_state('~/.cache/dein')
   call dein#add('Yggdroot/indentLine')
   call dein#add('ntpeters/vim-better-whitespace')
   call dein#add('godlygeek/tabular')
-  call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
-  call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
+  call dein#add('junegunn/fzf', {
+    \ 'build': './install --all',
+    \ 'merged': 0
+    \ })
+  call dein#add('junegunn/fzf.vim', {
+    \ 'depends': 'fzf'
+    \ })
   call dein#add('yuttie/comfortable-motion.vim')
   call dein#add('mhinz/vim-startify')
   call dein#add('itchyny/lightline.vim')
@@ -25,13 +30,19 @@ if dein#load_state('~/.cache/dein')
 
   " Commands
   call dein#add('easymotion/vim-easymotion')
+  call dein#add('AndrewRadev/splitjoin.vim')
   call dein#add('tpope/vim-surround')
   call dein#add('haya14busa/incsearch.vim')
-  call dein#add('haya14busa/incsearch-fuzzy.vim', { 'depends': 'incsearch.vim' })
-  call dein#add('haya14busa/incsearch-easymotion.vim', { 'depends': [ 'incsearch.vim', 'vim-easymotion' ] })
+  call dein#add('haya14busa/incsearch-fuzzy.vim', {
+    \ 'depends': 'incsearch.vim'
+    \ })
+  call dein#add('haya14busa/incsearch-easymotion.vim', {
+    \ 'depends': [ 'incsearch.vim', 'vim-easymotion' ]
+    \ })
 
   " Misc
   call dein#add('editorconfig/editorconfig-vim')
+  call dein#add('houtsnip/vim-emacscommandline')
 
   call dein#end()
   call dein#save_state()
