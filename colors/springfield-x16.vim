@@ -254,6 +254,10 @@ call <sid>hi("StartifySelect",   s:cterm0C, "", "", "")
 call <sid>hi("StartifySlash",    s:cterm03, "", "", "")
 call <sid>hi("StartifySpecial",  s:cterm0B, "", "", "")
 
+" Easymotion highlighting
+call <sid>hi("EasyMotionTarget",  s:cterm0E, "", "bold", "")
+call <sid>hi("EasyMotionTarget2First",  s:cterm08, "", "", "")
+call <sid>hi("EasyMotionTarget2Second",  s:cterm0E, "", "", "")
 
 " Remove functions
 delf <sid>hi

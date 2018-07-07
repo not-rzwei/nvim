@@ -6,10 +6,10 @@ noremap <space> <nop>
 let mapleader=" "
 noremap ; :
 noremap : ;
-nnoremap <silent> <leader>w :w<cr>
+nnoremap <silent> <leader><leader>w :w<cr>
 nnoremap <silent> <leader>q :q<cr>
 nnoremap <leader><leader>q :q!<cr>
-nnoremap <silent> <leader>l :Lex<cr>
+nnoremap <silent> <leader>p :Lex<cr>
 cnoremap ww w !sudo tee % >/dev/null
 noremap <c-w>p :pclose<cr>
 noremap <c-n> :bnext!<cr>
@@ -39,9 +39,19 @@ nmap <leader>ha <plug>GitGutterStageHunk
 nmap <leader>hr <plug>GitGutterUndoHunk
 nmap <leader>hv <plug>GitGutterPreviewHunk
 
+" easymotion/vim-easymotion
+map <leader>w <Plug>(easymotion-wl)
+map f <Plug>(easymotion-fl)
+map s <Plug>(easymotion-overwin-f2)
+map t <Plug>(easymotion-t2)
+map <leader>f <Plug>(easymotion-bd-f)
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
 
 " haya14busa/incsearch.vim
 noremap <silent><expr> /  incsearch#go(Incsearch_config())
 noremap <silent><expr> ?  incsearch#go(Incsearch_config({'command': '?'}))
 noremap <silent><expr> g/ incsearch#go(Incsearch_config({'is_stay': 1}))
 noremap <silent><expr> <leader>/  incsearch#go(Fuzzy_incsearch())
+map <silent> n  <Plug>(incsearch-nohl-n)
+map <silent> N  <Plug>(incsearch-nohl-N)

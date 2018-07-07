@@ -71,6 +71,11 @@ let g:lightline = {
 \   'colorscheme': 'jellybeans'
 \ }
 
+" easymotion/vim-easymotion
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_startofline = 1
+let g:EasyMotion_use_smartsign_us = 1
+
 " haya14busa/incsearch.vim
 let g:incsearch#auto_nohlsearch = 1
 function! Incsearch_config(...) abort
