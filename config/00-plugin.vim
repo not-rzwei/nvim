@@ -29,6 +29,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('airblade/vim-gitgutter')
 
   " Commands
+  call dein#add('neoclide/vim-easygit')
   call dein#add('easymotion/vim-easymotion')
   call dein#add('AndrewRadev/splitjoin.vim')
   call dein#add('tpope/vim-surround')
@@ -82,6 +83,9 @@ let g:startify_bookmarks = [
 let g:lightline = {
 \   'colorscheme': 'jellybeans'
 \ }
+
+" neoclide/vim-easygit
+let g:easygit_enable_command = 1
 
 " easymotion/vim-easymotion
 let g:EasyMotion_smartcase = 1
