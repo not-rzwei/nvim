@@ -41,6 +41,10 @@ if dein#load_state('~/.cache/dein')
     \ 'depends': [ 'incsearch.vim', 'vim-easymotion' ]
     \ })
 
+  " Languages
+  call dein#add('lepture/vim-jinja')
+
+
   " Misc
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('houtsnip/vim-emacscommandline')
@@ -87,6 +91,7 @@ let g:lightline = {
 " neoclide/vim-easygit
 let g:easygit_enable_command = 1
 let g:easygit_edit_edit_command = 'vsplit'
+let g:easygit_diff_edit_command = 'pedit'
 
 " easymotion/vim-easymotion
 let g:EasyMotion_smartcase = 1
