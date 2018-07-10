@@ -42,7 +42,6 @@ nmap <leader>hv <plug>GitGutterPreviewHunk
 
 " easymotion/vim-easymotion
 map <leader>w <Plug>(easymotion-wl)
-map f <Plug>(easymotion-fl)
 map s <Plug>(easymotion-overwin-f2)
 map t <Plug>(easymotion-t2)
 map <leader>f <Plug>(easymotion-bd-f)
