@@ -60,8 +60,9 @@ if dein#load_state('~/.cache/dein')
   call dein#add('houtsnip/vim-emacscommandline')
   call dein#add('tpope/vim-commentary', {
         \ 'lazy': 1,
-        \ 'on_cmd': 'Commentary'
         \ })
+  call dein#add('Shougo/deoplete.nvim')
+
   call dein#end()
   call dein#save_state()
 endif
@@ -116,3 +117,5 @@ endfunction
 call arpeggio#load()
 let g:arpeggio_timeoutlen = 80
 
+" Shougo/deoplete.vim
+call deoplete#enable()
