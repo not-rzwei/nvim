@@ -12,7 +12,6 @@ if dein#load_state('~/.cache/dein')
   call dein#add('haya14busa/dein-command.vim')
 
   " Interfaces
-  call dein#add('Yggdroot/indentLine')
   call dein#add('ntpeters/vim-better-whitespace')
   call dein#add('godlygeek/tabular')
   call dein#add('junegunn/fzf', {
@@ -53,16 +52,6 @@ endif
 
 filetype plugin indent on
 syntax on
-
-
-" Yggdroot/indentLine
-let g:indentLine_bgcolor_term = "NONE"
-let g:indentLine_enabled = 1
-let g:indentLine_faster = 1
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_leadingSpaceChar = '.'
-let g:indentLine_char = '|'
-"let g:indentLine_concealcursor = 'ic'
 
 " ntpeters/vim-better-whitespace
 let g:better_whitespace_enabled=1
