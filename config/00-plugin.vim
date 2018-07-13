@@ -14,13 +14,17 @@ if dein#load_state('~/.cache/dein')
   " Interfaces
   call dein#add('ntpeters/vim-better-whitespace')
   call dein#add('godlygeek/tabular')
+
   call dein#add('junegunn/fzf', {
-    \ 'build': './install --all',
-    \ 'merged': 0
-    \ })
+        \ 'build': './install --all',
+        \ 'merged': 0,
+        \ 'lazy': 1,
+        \ 'on_cmd': ['FFBuffer', 'FFiles']
+        \ })
   call dein#add('junegunn/fzf.vim', {
-    \ 'depends': 'fzf'
-    \ })
+        \ 'depends': 'fzf'
+        \ })
+
   call dein#add('yuttie/comfortable-motion.vim')
   call dein#add('mhinz/vim-startify')
   call dein#add('itchyny/lightline.vim')
@@ -31,14 +35,24 @@ if dein#load_state('~/.cache/dein')
   call dein#add('easymotion/vim-easymotion')
   call dein#add('AndrewRadev/splitjoin.vim')
   call dein#add('tpope/vim-surround')
-  call dein#add('jiangmiao/auto-pairs')
-  call dein#add('haya14busa/incsearch.vim')
+  call dein#add('jiangmiao/auto-pairs', {
+        \ 'lazy': 1,
+        \ 'on_i': 1
+        \ })
+
+  call dein#add('haya14busa/incsearch.vim', {
+        \ 'lazy': 1,
+        \ 'on_func': 'incsearch#go'
+        \ })
   call dein#add('haya14busa/incsearch-easymotion.vim', {
-    \ 'depends': [ 'incsearch.vim', 'vim-easymotion' ]
-    \ })
+        \ 'depends': [ 'incsearch.vim', 'vim-easymotion' ]
+        \ })
 
   " Languages
-  call dein#add('lepture/vim-jinja')
+  call dein#add('lepture/vim-jinja', {
+        \ 'lazy': 1,
+        \ 'on_ft': ['jinja']
+        \ })
 
   " Misc
   call dein#add('editorconfig/editorconfig-vim')
@@ -89,7 +103,6 @@ let g:EasyMotion_use_smartsign_us = 1
 let g:incsearch#auto_nohlsearch = 1
 function! Incsearch_config(...) abort
   return incsearch#util#deepextend(deepcopy({
-  \   'converters': [incsearch#config#fuzzyword#converter()],
   \   'modules': [incsearch#config#easymotion#module({'overwin': 1})],
   \   'keymap': {
   \     "\<CR>": '<Over>(easymotion)'
