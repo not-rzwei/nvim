@@ -38,10 +38,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('easymotion/vim-easymotion')
   call dein#add('AndrewRadev/splitjoin.vim')
   call dein#add('tpope/vim-surround')
-  call dein#add('jiangmiao/auto-pairs', {
-        \ 'lazy': 1,
-        \ 'on_i': 1
-        \ })
+  call dein#add('jiangmiao/auto-pairs')
 
   call dein#add('haya14busa/incsearch.vim', {
         \ 'lazy': 1,
@@ -54,16 +51,17 @@ if dein#load_state('~/.cache/dein')
   " Languages
   call dein#add('lepture/vim-jinja')
 
+  " Autocomplete
+  call dein#add('Shougo/deoplete.nvim')
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+
   " Misc
   call dein#add('kana/vim-arpeggio')
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('houtsnip/vim-emacscommandline')
   call dein#add('tpope/vim-commentary', {
         \ 'lazy': 1,
-        \ })
-  call dein#add('Shougo/deoplete.nvim', {
-        \ 'lazy': 1,
-        \ 'on_i': 1
         \ })
 
   call dein#end()
@@ -121,5 +119,5 @@ call arpeggio#load()
 let g:arpeggio_timeoutlen = 80
 
 " deoplete.vim
-call deoplete#enable()
+let g:deoplete#enable_at_startup = 1
 
