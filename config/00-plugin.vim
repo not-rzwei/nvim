@@ -55,6 +55,7 @@ if dein#load_state('~/.cache/dein')
         \ })
 
   " Misc
+  call dein#add('kana/vim-arpeggio')
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('houtsnip/vim-emacscommandline')
   call dein#add('tpope/vim-commentary', {
@@ -110,3 +111,8 @@ function! Incsearch_config(...) abort
   \   'is_expr': 0
   \ }), get(a:, 1, {}))
 endfunction
+
+" kana/vim-arpeggion
+call arpeggio#load()
+let g:arpeggio_timeoutlen = 80
+
