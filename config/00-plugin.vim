@@ -13,7 +13,10 @@ if dein#load_state('~/.cache/dein')
 
   " Interfaces
   call dein#add('ntpeters/vim-better-whitespace')
-  call dein#add('godlygeek/tabular')
+  call dein#add('godlygeek/tabular', {
+        \ 'lazy': 1,
+        \ 'on_cmd': 'Tabularize'
+        \ })
 
   call dein#add('junegunn/fzf', {
         \ 'build': './install --all',
