@@ -70,38 +70,38 @@ endif
 filetype plugin indent on
 syntax on
 
-" ntpeters/vim-better-whitespace
+" vim-better-whitespace
 let g:better_whitespace_enabled=1
 let g:better_whitespace_ctermcolor=1
 let g:strip_whitespace_on_save=1
 
-" junegunn/fzf
+" fzf
 let g:fzf_command_prefix = 'F'
 let g:fzf_layout = { 'down': '~20%' }
 let g:fzf_buffers_jump = 1
 
-" mhinz/vim-startify
+" vim-startify
 let g:startify_bookmarks = [
 \   {'v': '~/.config/nvim/init.vim'},
 \   {'x': '~/.xmonad/xmonad.hs'},
 \ ]
 
-" itchyny/lightline
+" lightline
 let g:lightline = {
 \   'colorscheme': 'jellybeans'
 \ }
 
-" neoclide/vim-easygit
+" vim-easygit
 let g:easygit_enable_command = 1
 let g:easygit_edit_edit_command = 'vsplit'
 let g:easygit_diff_edit_command = 'pedit'
 
-" easymotion/vim-easymotion
+" vim-easymotion
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_startofline = 1
 let g:EasyMotion_use_smartsign_us = 1
 
-" haya14busa/incsearch.vim
+" incsearch.vim
 let g:incsearch#auto_nohlsearch = 1
 function! Incsearch_config(...) abort
   return incsearch#util#deepextend(deepcopy({
@@ -113,9 +113,9 @@ function! Incsearch_config(...) abort
   \ }), get(a:, 1, {}))
 endfunction
 
-" kana/vim-arpeggion
+" vim-arpeggio
 call arpeggio#load()
 let g:arpeggio_timeoutlen = 80
 
-" Shougo/deoplete.vim
+" deoplete.vim
 call deoplete#enable()
