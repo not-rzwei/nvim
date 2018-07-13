@@ -52,10 +52,7 @@ if dein#load_state('~/.cache/dein')
         \ })
 
   " Languages
-  call dein#add('lepture/vim-jinja', {
-        \ 'lazy': 1,
-        \ 'on_ft': ['jinja']
-        \ })
+  call dein#add('lepture/vim-jinja')
 
   " Misc
   call dein#add('kana/vim-arpeggio')
@@ -125,3 +122,4 @@ let g:arpeggio_timeoutlen = 80
 
 " deoplete.vim
 call deoplete#enable()
+
