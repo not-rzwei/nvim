@@ -24,7 +24,6 @@ if dein#load_state('~/.cache/dein')
   call dein#add('yuttie/comfortable-motion.vim')
   call dein#add('mhinz/vim-startify')
   call dein#add('itchyny/lightline.vim')
-  call dein#add('zefei/vim-wintabs')
   call dein#add('airblade/vim-gitgutter')
 
   " Commands
@@ -39,7 +38,6 @@ if dein#load_state('~/.cache/dein')
 
   " Languages
   call dein#add('lepture/vim-jinja')
-
 
   " Misc
   call dein#add('editorconfig/editorconfig-vim')
