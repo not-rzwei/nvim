@@ -34,9 +34,6 @@ if dein#load_state('~/.cache/dein')
   call dein#add('AndrewRadev/splitjoin.vim')
   call dein#add('tpope/vim-surround')
   call dein#add('haya14busa/incsearch.vim')
-  call dein#add('haya14busa/incsearch-fuzzy.vim', {
-    \ 'depends': 'incsearch.vim'
-    \ })
   call dein#add('haya14busa/incsearch-easymotion.vim', {
     \ 'depends': [ 'incsearch.vim', 'vim-easymotion' ]
     \ })
@@ -109,7 +106,4 @@ function! Incsearch_config(...) abort
   \   },
   \   'is_expr': 0
   \ }), get(a:, 1, {}))
-endfunction
-function! Fuzzy_incsearch() abort
-  return Incsearch_config({'converters': [incsearch#config#fuzzyword#converter()]})
 endfunction
