@@ -6,9 +6,14 @@ noremap <space> <nop>
 let mapleader=" "
 noremap ; :
 noremap : ;
-imap jj <esc>
-nnoremap <silent> <leader><leader>w :w<cr>
-nnoremap <silent> <leader>q :q<cr>
+" imap jj <esc>
+Arpeggio inoremap jk <esc>
+Arpeggio cnoremap jk <esc>
+" nnoremap <silent> <leader><leader>w :w<cr>
+Arpeggio noremap we :w<esc>
+Arpeggio noremap wq :wq<esc>
+" nnoremap <silent> <leader>q :q<cr>
+Arpeggio noremap qe :q<esc>
 nnoremap <leader><leader>q :q!<cr>
 nnoremap <silent> <leader>p :Lex<cr>
 cnoremap ww w !sudo tee % >/dev/null
@@ -23,7 +28,8 @@ noremap <c-l> <c-w>l
 
 " Configuration
 noremap <leader><leader>e :vsplit ~/.config/nvim/config/01-general.vim<cr>
-noremap <leader><leader>r :source $MYVIMRC<cr>:echo "Reloaded"<cr>
+" noremap <leader><leader>r :source $MYVIMRC<cr>:echo "Reloaded"<cr>
+Arpeggio noremap wr :w<cr>:source $MYVIMRC<cr>:echo "Reloaded"<cr>
 
 " Evil keys
 map <up> <nop>
@@ -44,7 +50,8 @@ nmap <leader>hv <plug>GitGutterPreviewHunk
 map <leader>w <Plug>(easymotion-wl)
 map s <Plug>(easymotion-overwin-f2)
 map t <Plug>(easymotion-t2)
-map <leader>f <Plug>(easymotion-bd-f)
+" map <leader>f <Plug>(easymotion-bd-f)
+Arpeggio map fw <Plug>(easymotion-bd-f)
 map <leader>j <Plug>(easymotion-j)
 map <leader>k <Plug>(easymotion-k)
 
@@ -54,3 +61,4 @@ noremap <silent><expr> ?  incsearch#go(Incsearch_config({'command': '?'}))
 noremap <silent><expr> g/ incsearch#go(Incsearch_config({'is_stay': 1}))
 map <silent> n  <Plug>(incsearch-nohl-n)
 map <silent> N  <Plug>(incsearch-nohl-N)
+
