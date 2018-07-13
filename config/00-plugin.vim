@@ -61,7 +61,10 @@ if dein#load_state('~/.cache/dein')
   call dein#add('tpope/vim-commentary', {
         \ 'lazy': 1,
         \ })
-  call dein#add('Shougo/deoplete.nvim')
+  call dein#add('Shougo/deoplete.nvim', {
+        \ 'lazy': 1,
+        \ 'on_i': 1
+        \ })
 
   call dein#end()
   call dein#save_state()
