@@ -21,10 +21,10 @@ noremap <silent> <c-w>p :pclose<cr>
 noremap <c-n> :bnext!<cr>
 
 " Pane Movement
-noremap <c-h> <c-w>h
-noremap <c-j> <c-w>j
-noremap <c-k> <c-w>k
-noremap <c-l> <c-w>l
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
 
 " Configuration
 noremap <leader><leader>e :vsplit ~/.config/nvim/config/01-general.vim<cr>
@@ -47,18 +47,22 @@ nmap <leader>hr <plug>GitGutterUndoHunk
 nmap <leader>hv <plug>GitGutterPreviewHunk
 
 " easymotion/vim-easymotion
-map <leader>w <Plug>(easymotion-wl)
+map <leader>w <plug>(easymotion-wl)
 map s <Plug>(easymotion-overwin-f2)
 map t <Plug>(easymotion-t2)
-" map <leader>f <Plug>(easymotion-bd-f)
-Arpeggio map fw <Plug>(easymotion-bd-f)
-map <leader>j <Plug>(easymotion-j)
-map <leader>k <Plug>(easymotion-k)
+" map <leader>f <plug>(easymotion-bd-f)
+Arpeggio map fw <plug>(easymotion-bd-f)
+map <leader>j <plug>(easymotion-j)
+map <leader>k <plug>(easymotion-k)
 
-" haya14busa/incsearch.vim
+" incsearch.vim
 noremap <silent><expr> /  incsearch#go(Incsearch_config())
 noremap <silent><expr> ?  incsearch#go(Incsearch_config({'command': '?'}))
 noremap <silent><expr> g/ incsearch#go(Incsearch_config({'is_stay': 1}))
-map <silent> n  <Plug>(incsearch-nohl-n)
-map <silent> N  <Plug>(incsearch-nohl-N)
+map <silent> n  <plug>(incsearch-nohl-n)
+map <silent> N  <plug>(incsearch-nohl-N)
 
+" neosnippet
+imap <c-k> <plug>(neosnippet_expand_or_jump)
+smap <C-k> <plug>(neosnippet_expand_or_jump)
+xmap <C-k> <plug>(neosnippet_expand_target)
