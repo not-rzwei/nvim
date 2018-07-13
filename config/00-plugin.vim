@@ -31,6 +31,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('easymotion/vim-easymotion')
   call dein#add('AndrewRadev/splitjoin.vim')
   call dein#add('tpope/vim-surround')
+  call dein#add('jiangmiao/auto-pairs')
   call dein#add('haya14busa/incsearch.vim')
   call dein#add('haya14busa/incsearch-easymotion.vim', {
     \ 'depends': [ 'incsearch.vim', 'vim-easymotion' ]
@@ -42,8 +43,10 @@ if dein#load_state('~/.cache/dein')
   " Misc
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('houtsnip/vim-emacscommandline')
-  call dein#add('tpope/vim-commentary')
-
+  call dein#add('tpope/vim-commentary', {
+        \ 'lazy': 1,
+        \ 'on_cmd': 'Commentary'
+        \ })
   call dein#end()
   call dein#save_state()
 endif
