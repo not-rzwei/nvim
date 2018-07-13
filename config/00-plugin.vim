@@ -120,4 +120,7 @@ let g:arpeggio_timeoutlen = 80
 
 " deoplete.vim
 let g:deoplete#enable_at_startup = 1
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
 
