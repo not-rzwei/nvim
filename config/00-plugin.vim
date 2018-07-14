@@ -55,6 +55,10 @@ if dein#load_state('~/.cache/dein')
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('zchee/deoplete-jedi', {
+        \ 'lazy': 1,
+        \ 'on_ft': ['python']
+        \ })
 
   " Misc
   call dein#add('kana/vim-arpeggio')
