@@ -1,7 +1,8 @@
 # Host Connection
 snippet     ansible_connection
+alias       conn
 options     word
-    ansible_connection=${1}
+    ansible_connection=${1:ssh}
 
 snippet     ansible_host
 alias       host
