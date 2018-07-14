@@ -66,3 +66,4 @@ map <silent> N  <plug>(incsearch-nohl-N)
 imap <c-k> <plug>(neosnippet_expand_or_jump)
 smap <C-k> <plug>(neosnippet_expand_or_jump)
 xmap <C-k> <plug>(neosnippet_expand_target)
+
