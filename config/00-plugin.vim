@@ -64,6 +64,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('kana/vim-arpeggio')
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('houtsnip/vim-emacscommandline')
+  call dein#add('jaxbot/browserlink.vim')
   call dein#add('tpope/vim-commentary', {
         \ 'lazy': 1,
         \ })
