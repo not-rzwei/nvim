@@ -55,15 +55,24 @@ if dein#load_state('~/.cache/dein')
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('othree/jspc.vim')
+  call dein#add('wokalski/autocomplete-flow', {
+        \ 'lazy': 1,
+        \ 'on_ft': ['javascript']
+        \ })
   call dein#add('zchee/deoplete-jedi', {
         \ 'lazy': 1,
         \ 'on_ft': ['python']
         \ })
 
+  " Lint
+  call dein#add('w0rp/ale')
+
   " Misc
   call dein#add('kana/vim-arpeggio')
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('houtsnip/vim-emacscommandline')
+  call dein#add('benmills/vimux')
   call dein#add('jaxbot/browserlink.vim')
   call dein#add('tpope/vim-commentary', {
         \ 'lazy': 1,
@@ -125,5 +134,21 @@ let g:arpeggio_timeoutlen = 80
 
 " deoplete.vim
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#omni#functions = {}
+let g:deoplete#omni#functions.javascript = ['jspc#omni']
+
+" neosnippet
+let g:neosnippet#enable_completed_snippet = 1
 let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
 
+
+" ale
+let g:ale_linters = {
+\   'javascript': ['eslint', 'flow'],
+\  }
+let g:ale_fixers = {
+\   'javascript': ['eslint', 'importjs'],
+\}
+
+" vimux
+let g:VimuxOrientation = "v"
