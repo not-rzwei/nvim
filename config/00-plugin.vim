@@ -151,4 +151,4 @@ let g:ale_fixers = {
 \}
 
 " vimux
-let g:VimuxOrientation = "v"
+let g:VimuxOrientation = "h"
