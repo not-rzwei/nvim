@@ -19,6 +19,8 @@ nnoremap <silent> <leader>p :Lex<cr>
 cnoremap ww w !sudo tee % >/dev/null
 noremap <silent> <c-w>p :pclose<cr>
 noremap <c-n> :bnext!<cr>
+nnoremap <silent> vv <C-w>v
+map <Leader>r *N
 
 " Pane Movement
 nnoremap <c-h> <c-w>h
@@ -66,4 +68,13 @@ map <silent> N  <plug>(incsearch-nohl-N)
 imap <c-k> <plug>(neosnippet_expand_or_jump)
 smap <C-k> <plug>(neosnippet_expand_or_jump)
 xmap <C-k> <plug>(neosnippet_expand_target)
+
+" ale
+nmap <silent> <leader>f <plug>(ale_fix)
+nmap <silent> [e <plug>(ale_previous_wrap)
+nmap <silent> ]e <plug>(ale_next_wrap)
+"
+" vimux
+noremap <silent> <leader>vp :VimuxPromptCommand<cr>
+noremap <silent> <leader>vl :VimuxRunLastCommand<cr>
 
