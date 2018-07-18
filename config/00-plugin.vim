@@ -56,10 +56,8 @@ if dein#load_state('~/.cache/dein')
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('othree/jspc.vim')
-  call dein#add('wokalski/autocomplete-flow', {
-        \ 'lazy': 1,
-        \ 'on_ft': ['javascript']
-        \ })
+  call dein#add('carlitux/deoplete-ternjs')
+  call dein#add('ternjs/tern_for_vim')
   call dein#add('zchee/deoplete-jedi', {
         \ 'lazy': 1,
         \ 'on_ft': ['python']
@@ -135,20 +133,32 @@ let g:arpeggio_timeoutlen = 80
 " deoplete.vim
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#omni#functions = {}
-let g:deoplete#omni#functions.javascript = ['jspc#omni']
+let g:deoplete#omni#functions.javascript = [
+  \ 'tern#Complete',
+  \ 'jspc#omni'
+  \]
+let g:deoplete#sources = {}
+let g:deoplete#sources['javascript.jsx'] = ['file', 'ternjs']
+
+let g:tern_request_timeout = 1
+let g:tern_request_timeout = 6000
+let g:tern#command = ["ternjs"]
+let g:tern#arguments = ["--persistent"]
 
 " neosnippet
 let g:neosnippet#enable_completed_snippet = 1
 let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
 
-
 " ale
 let g:ale_linters = {
-\   'javascript': ['eslint', 'flow'],
+\   'javascript': ['eslint']
 \  }
 let g:ale_fixers = {
-\   'javascript': ['eslint', 'importjs'],
+\   'javascript': ['prettier-eslint', 'eslint', 'importjs']
 \}
 
 " vimux
 let g:VimuxOrientation = "h"
+
+" browserlink
+let g:bl_pagefiletypes = ['html', 'javascript', 'php', 'markdown']

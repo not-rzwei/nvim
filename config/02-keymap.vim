@@ -75,6 +75,5 @@ nmap <silent> [e <plug>(ale_previous_wrap)
 nmap <silent> ]e <plug>(ale_next_wrap)
 "
 " vimux
-noremap <silent> <leader>vp :VimuxPromptCommand<cr>
-noremap <silent> <leader>vl :VimuxRunLastCommand<cr>
-
+Arpeggionoremap vp :VimuxPromptCommand<cr>
+Arpeggionoremap vl :VimuxRunLastCommand<cr>
