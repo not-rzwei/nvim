@@ -54,3 +54,7 @@ depends = ['incsearch.vim']
 
 [[plugins]]
 repo = 'osyo-manga/vim-anzu'
+
+# MISC
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
