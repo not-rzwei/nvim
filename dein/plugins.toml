@@ -28,6 +28,9 @@ repo = 'airblade/vim-gitgutter'
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
 
+[[plugins]]
+repo = 'neoclide/vim-easygit'
+
 # SEARCH
 [[plugins]]
 repo = 'haya14busa/incsearch.vim'
