@@ -31,6 +31,12 @@ repo = 'easymotion/vim-easymotion'
 [[plugins]]
 repo = 'neoclide/vim-easygit'
 
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
 # SEARCH
 [[plugins]]
 repo = 'haya14busa/incsearch.vim'
