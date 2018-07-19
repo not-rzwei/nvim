@@ -26,6 +26,9 @@ repo = 'airblade/vim-gitgutter'
 
 # TIME SAVER
 [[plugins]]
+repo = 'rshier/vimux'
+
+[[plugins]]
 repo = 'easymotion/vim-easymotion'
 
 [[plugins]]
