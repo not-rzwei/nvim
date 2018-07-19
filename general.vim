@@ -5,6 +5,7 @@ set cursorline
 set number
 set relativenumber
 set noshowmode
+set signcolumn=yes
 
 " Search
 set ignorecase
