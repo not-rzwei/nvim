@@ -31,6 +31,11 @@ repo = 'haya14busa/incsearch.vim'
 
 [[plugins]]
 repo = 'haya14busa/incsearch-easymotion.vim'
+depends = ['incsearch.vim', 'vim-easymotion']
+
+[[plugins]]
+repo = 'haya14busa/incsearch-fuzzy.vim'
+depends = ['incsearch.vim']
 
 [[plugins]]
 repo = 'osyo-manga/vim-anzu'
