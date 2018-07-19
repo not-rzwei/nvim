@@ -9,6 +9,9 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
+" Misc
+nnoremap <expr> <leader><leader>r Reload_plugins()
+
 " No Evil keys
 map <up> <nop>
 map <down> <nop>
