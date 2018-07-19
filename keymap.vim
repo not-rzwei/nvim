@@ -11,6 +11,7 @@ nnoremap <c-l> <c-w>l
 
 " Misc
 nnoremap <expr> <leader><leader>r Reload_plugins()
+nnoremap * :keepjumps normal! mi*`i<CR>
 
 " No Evil keys
 map <up> <nop>
