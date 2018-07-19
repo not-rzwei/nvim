@@ -24,6 +24,9 @@ repo = 'miyakogi/seiya.vim'
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 
+[[plugins]]
+repo = 'junegunn/rainbow_parentheses.vim'
+
 # TIME SAVER
 [[plugins]]
 repo = 'rshier/vimux'
