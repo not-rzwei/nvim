@@ -34,9 +34,23 @@ endif
 """
 
 """ Source
-function! s:load(file)
-  exec "source" . expand('~/.config/nvim/') . a:file
+function! s:load(file, ...)
+  let s:dir = expand('~/.config/nvim/')
+  let a:abs = get(a:, 1, 0)
+
+  if a:abs
+      let s:dir = ''
+  endif
+
+  exec "source" . s:dir . a:file
 endfunction
 
 call s:load('general.vim')
 call s:load('keymap.vim')
+
+""" Reload
+function! Reload_plugins()
+  for file in split(glob('~/.config/nvim/plugin/*.vim'), '\n')
+    call s:load(file, 1)
+  endfor
+endfunction
