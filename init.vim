@@ -34,7 +34,7 @@ endif
 """
 
 """ Source
-function s:load(file)
+function! s:load(file)
   exec "source" . expand('~/.config/nvim/') . a:file
 endfunction
 
