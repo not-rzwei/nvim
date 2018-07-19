@@ -1,3 +1,5 @@
+set autochdir
+
 " Eye
 colorscheme monokai_pro
 set cursorline
