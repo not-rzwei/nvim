@@ -37,6 +37,9 @@ repo = 'tpope/vim-surround'
 [[plugins]]
 repo = 'jiangmiao/auto-pairs'
 
+[[plugins]]
+repo = 'scrooloose/nerdcommenter'
+
 # SEARCH
 [[plugins]]
 repo = 'haya14busa/incsearch.vim'
