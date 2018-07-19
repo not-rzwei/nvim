@@ -12,8 +12,3 @@ on_ft = [
 [[plugins]]
 repo  = 'pangloss/vim-javascript'
 on_ft = 'javascript'
-
-# YAML
-[[plugins]]
-repo  = 'stephpy/vim-yaml'
-on_ft = 'yaml'
