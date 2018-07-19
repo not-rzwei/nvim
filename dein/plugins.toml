@@ -21,6 +21,9 @@ repo = 'Erichain/vim-monokai-pro'
 [[plugins]]
 repo = 'miyakogi/seiya.vim'
 
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
 # TIME SAVER
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
