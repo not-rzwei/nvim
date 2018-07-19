@@ -1,4 +1,9 @@
+# CODE
+[[plugins]]
+repo  = 'w0rp/ale'
+on_ft = ['javascript', 'python', 'ansible']
+
 # JS
 [[plugins]]
 repo  = 'pangloss/vim-javascript'
-on_ft = ['javascript']
+on_ft = 'javascript'
