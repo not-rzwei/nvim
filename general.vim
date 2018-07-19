@@ -1,5 +1,6 @@
 " Eye
 colorscheme monokai_pro
+set background=dark
 set cursorline
 set number
 set relativenumber
