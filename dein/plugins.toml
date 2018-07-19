@@ -61,6 +61,15 @@ depends = ['incsearch.vim']
 [[plugins]]
 repo = 'osyo-manga/vim-anzu'
 
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+merged = 0
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+
 # MISC
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
