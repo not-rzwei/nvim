@@ -1,3 +1,6 @@
+noremap <space> <nop>
+let mapleader=" "
+
 " VIM Mode
 noremap ; :
 noremap : ;
