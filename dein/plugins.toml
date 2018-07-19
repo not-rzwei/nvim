@@ -40,6 +40,9 @@ repo = 'jiangmiao/auto-pairs'
 [[plugins]]
 repo = 'scrooloose/nerdcommenter'
 
+[[plugins]]
+repo = 'tpope/vim-unimpaired'
+
 # SEARCH
 [[plugins]]
 repo = 'haya14busa/incsearch.vim'
