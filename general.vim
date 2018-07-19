@@ -3,6 +3,7 @@ colorscheme monokai_pro
 set cursorline
 set number
 set relativenumber
+set noshowmode
 
 " Search
 set ignorecase
