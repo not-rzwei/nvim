@@ -97,3 +97,13 @@ autocmd MyAutoCmd InsertLeave *
 
 autocmd MyAutoCmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
 autocmd MyAutoCmd WinLeave * setlocal nocursorline
+
+" Disable completion message
+set noshowmode
+try
+  set shortmess+=c
+catch /^Vim\%((\a\+)\)\=:E539: Illegal character/
+  autocmd MyAutoCmd VimEnter *
+        \ highlight ModeMsg guifg=bg guibg=bg |
+        \ highlight Question guifg=bg guibg=bg
+endtry
