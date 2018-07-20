@@ -16,12 +16,6 @@ repo = 'kana/vim-arpeggio'
 repo = 'itchyny/lightline.vim'
 
 [[plugins]]
-repo = 'Erichain/vim-monokai-pro'
-
-[[plugins]]
-repo = 'miyakogi/seiya.vim'
-
-[[plugins]]
 repo = 'airblade/vim-gitgutter'
 
 [[plugins]]
@@ -44,13 +38,10 @@ repo = 'tpope/vim-surround'
 repo = 'jiangmiao/auto-pairs'
 
 [[plugins]]
-repo = 'scrooloose/nerdcommenter'
-
-[[plugins]]
 repo = 'tpope/vim-repeat'
 
 [[plugins]]
-repo = 'tpope/vim-unimpaired'
+repo = 'ervandew/supertab'
 
 # SEARCH
 [[plugins]]
