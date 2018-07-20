@@ -8,6 +8,10 @@ on_ft = [
   'yaml'
 ]
 
+[[plugins]]
+repo  = 'Shougo/deoplete.nvim'
+on_i	= 1
+
 # JS
 [[plugins]]
 repo  = 'pangloss/vim-javascript'
