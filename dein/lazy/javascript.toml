@@ -1,0 +1,11 @@
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = ['javascript', 'json']
+
+[[plugins]]
+repo = 'ternjs/tern_for_vim'
+on_ft = ['javascript']
+
+[[plugins]]
+repo = 'carlitux/deoplete-ternjs'
+on_ft = ['javascript']
