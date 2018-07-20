@@ -1,7 +1,7 @@
 [[plugins]]
 repo = 'ervandew/supertab'
-on_i = 1
-on_map = '<tab>'
+#on_i = 0
+#on_map = '<tab>'
 
 hook_add = '''
 let g:SuperTabCrMapping = 1
