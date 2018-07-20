@@ -7,6 +7,13 @@ let g:deoplete#auto_complete_start_length = 1
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_smart_case = 1
 
-inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "j"
-inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "k"
+if !exists('g:deoplete#omni_patterns')
+  let g:deoplete#omni_patterns = {}
+endif
+
+inoremap <expr> J pumvisible() ? "\<C-N>" : "J"
+inoremap <expr> K pumvisible() ? "\<C-P>" : "K"
+inoremap <expr> L pumvisible() ? "\<C-Y>" : "L"
 '''
+[[plugins]]
+repo  = 'Shougo/echodoc.vim'
