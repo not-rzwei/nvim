@@ -1,2 +1,3 @@
 [[plugins]]
 repo = 'tweekmonster/startuptime.vim'
+on_cmd = ['StartupTime']
