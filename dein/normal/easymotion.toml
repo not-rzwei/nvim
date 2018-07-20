@@ -1,0 +1,18 @@
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+hook_add = '''
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_startofline = 1
+let g:EasyMotion_use_smartsign_us = 1
+
+map s <plug>(easymotion-f2)
+map t <plug>(easymotion-t2)
+map f <plug>(easymotion-bd-fl)
+noremap F f
+
+map <space>w <plug>(easymotion-wl)
+map <space>j <plug>(easymotion-j)
+map <space>k <plug>(easymotion-k)
+map <space>f <plug>(easymotion-bd-f)
+'''
+
