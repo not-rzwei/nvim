@@ -6,3 +6,9 @@ merged = 0
 [[plugins]]
 repo = 'junegunn/fzf.vim'
 depends = 'fzf'
+hook_add = '''
+let g:fzf_layout = { 'down': '~30%' }
+let g:fzf_buffers_jump = 1
+nnoremap <space>- :Files<cr>
+nnoremap <space>= :Buffers<cr>
+'''
