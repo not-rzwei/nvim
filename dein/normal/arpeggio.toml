@@ -3,6 +3,8 @@ repo = 'kana/vim-arpeggio'
 hook_add = '''
 call arpeggio#load()
 
+let g:arpeggio_timeoutlen = 60
+
 Arpeggio inoremap jk  <Esc>
 Arpeggio vnoremap jk  <Esc>
 
