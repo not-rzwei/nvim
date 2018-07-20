@@ -3,6 +3,7 @@ repo = 'ervandew/supertab'
 on_i = 1
 on_map = '<tab>'
 
-hook_source_post = '''
+hook_add = '''
 let g:SuperTabCrMapping = 1
+let g:SuperTabDefaultCompletionType = "<c-n>"
 '''
