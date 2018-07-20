@@ -39,3 +39,7 @@ nnoremap > >>
 nnoremap < <<
 xnoremap > >gv
 xnoremap < <gv
+
+" Deleting
+noremap X dd
+noremap dd "_dd
