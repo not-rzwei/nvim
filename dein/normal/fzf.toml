@@ -11,4 +11,10 @@ let g:fzf_layout = { 'down': '~30%' }
 let g:fzf_buffers_jump = 1
 nnoremap <space>- :Files<cr>
 nnoremap <space>= :Buffers<cr>
+
+augroup fzf_buffer
+  autocmd!
+  autocmd FileType fzf tnoremap <buffer> <space>- <c-c>
+  autocmd FileType fzf tnoremap <buffer> <space>= <c-c>
+augroup END
 '''
