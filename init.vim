@@ -27,6 +27,11 @@ function! s:source_rc(path, ...) abort
   endtry
 endfunction
 
+augroup MyAutoCmd
+  autocmd!
+  autocmd CursorHold *.toml syntax sync minlines=300
+augroup END
+
 call s:source_rc('init.vim')
 call s:source_rc('dein.vim')
 call s:source_rc('options.vim')
