@@ -33,3 +33,9 @@ nnoremap cn *``cgn
 nnoremap cN *``cgN
 vnoremap <expr> cn "y/\\V\<C-r>=escape(@\", '/')\<CR>\<CR>" . "``cgn"
 vnoremap <expr> cN "y/\\V\<C-r>=escape(@\", '/')\<CR>\<CR>" . "``cgN"
+
+" Indent
+nnoremap > >>
+nnoremap < <<
+xnoremap > >gv
+xnoremap < <gv
