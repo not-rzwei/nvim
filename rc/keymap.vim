@@ -1,7 +1,7 @@
 noremap <space> <nop>
 let mapleader=" "
 
-" VIM Mode
+" Command mode
 noremap ; :
 noremap : ;
 
@@ -12,11 +12,7 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
-" Misc
-nnoremap <expr> <leader><leader>r Reload_plugins()
-nnoremap <leader>r :keepjumps normal! mi*`i<CR>
-
-" No Evil keys
+" Distant Stars
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
