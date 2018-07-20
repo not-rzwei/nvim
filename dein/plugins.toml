@@ -73,3 +73,6 @@ repo = 'ntpeters/vim-better-whitespace'
 # MISC
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'tweekmonster/startuptime.vim'
