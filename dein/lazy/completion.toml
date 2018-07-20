@@ -16,3 +16,21 @@ inoremap <expr> J pumvisible() ? "\<C-N>" : "J"
 inoremap <expr> K pumvisible() ? "\<C-P>" : "K"
 inoremap <expr> L pumvisible() ? "\<C-Y>" : "L"
 '''
+
+hook_source = '''
+call deoplete#custom#source('_', 'converters', [
+	\ 'converter_remove_paren',
+	\ 'converter_remove_overlap',
+	\ 'converter_truncate_abbr',
+	\ 'converter_truncate_menu',
+	\ 'converter_auto_delimiter',
+	\ ])
+'''
+
+[[plugins]]
+repo  = 'Shougo/neopairs.vim'
+on_i  = 1
+depends = ['deoplete.nvim']
+hook_source = '''
+let g:neopairs#enable = 1
+'''
