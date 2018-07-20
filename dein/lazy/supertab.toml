@@ -1,0 +1,8 @@
+[[plugins]]
+repo = 'ervandew/supertab'
+on_i = 1
+on_map = '<tab>'
+
+hook_source_post = '''
+let g:SuperTabCrMapping = 1
+'''
