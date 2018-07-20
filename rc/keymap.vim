@@ -1,9 +1,9 @@
-noremap <space> <nop>
 let mapleader=" "
 
 " Command mode
 noremap ; :
 noremap : ;
+noremap q; q:
 
 " Pane
 nnoremap vv <c-w><c-v>
