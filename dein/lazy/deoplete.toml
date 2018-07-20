@@ -3,6 +3,10 @@ repo  = 'Shougo/deoplete.nvim'
 on_i  = 1
 hook_add = '''
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#auto_complete_start_length = 1
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_smart_case = 1
+
 inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "j"
 inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "k"
 '''
