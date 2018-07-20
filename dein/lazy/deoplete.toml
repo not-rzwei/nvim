@@ -6,6 +6,7 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#auto_complete_start_length = 1
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_smart_case = 1
+let g:deoplete#num_processes = 1
 
 if !exists('g:deoplete#omni_patterns')
   let g:deoplete#omni_patterns = {}
