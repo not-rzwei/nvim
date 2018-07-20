@@ -15,5 +15,3 @@ inoremap <expr> J pumvisible() ? "\<C-N>" : "J"
 inoremap <expr> K pumvisible() ? "\<C-P>" : "K"
 inoremap <expr> L pumvisible() ? "\<C-Y>" : "L"
 '''
-[[plugins]]
-repo  = 'Shougo/echodoc.vim'
