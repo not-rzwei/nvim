@@ -94,3 +94,6 @@ autocmd MyAutoCmd BufWritePost *
 autocmd MyAutoCmd InsertLeave *
       \ if &paste | setlocal nopaste | echo 'nopaste' | endif |
       \ if &l:diff | diffupdate | endif
+
+autocmd MyAutoCmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+autocmd MyAutoCmd WinLeave * setlocal nocursorline
