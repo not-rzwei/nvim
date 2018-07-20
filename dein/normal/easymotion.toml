@@ -15,4 +15,3 @@ map <space>j <plug>(easymotion-j)
 map <space>k <plug>(easymotion-k)
 map <space>f <plug>(easymotion-bd-f)
 '''
-
