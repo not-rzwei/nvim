@@ -10,9 +10,18 @@ on_ft = [
 
 [[plugins]]
 repo  = 'Shougo/deoplete.nvim'
-on_i	= 1
+on_i  = 1
 
 # JS
 [[plugins]]
 repo  = 'pangloss/vim-javascript'
 on_ft = 'javascript'
+
+# OTHER
+[[plugins]]
+repo    = 'scrooloose/nerdcommenter'
+on_map  = ['<Plug>NERDCommenterToggle']
+
+[[plugins]]
+repo = 'godlygeek/tabular'
+on_cmd = ['Tabularize', 'Tab']
