@@ -5,7 +5,20 @@ on_ft = ['javascript', 'json']
 [[plugins]]
 repo = 'ternjs/tern_for_vim'
 on_ft = ['javascript']
+hook_source = '''
+let g:tern#command = ['ternjs']
+let g:tern#arguments = ['--persistent']
+'''
 
 [[plugins]]
 repo = 'carlitux/deoplete-ternjs'
 on_ft = ['javascript']
+hook_source = '''
+let g:deoplete#sources#ternjs#tern_bin = 'ternjs'
+let g:deoplete#sources#ternjs#timeout = 1
+let g:deoplete#sources#ternjs#case_insensitive = 1
+let g:deoplete#sources#ternjs#types = 1
+let g:deoplete#sources#ternjs#docs = 1
+let g:deoplete#sources#ternjs#depths = 1
+let g:deoplete#omni_patterns.javascript = '[^. *\t]\.\w*'
+'''
