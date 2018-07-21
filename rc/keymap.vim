@@ -41,5 +41,5 @@ xnoremap > >gv
 xnoremap < <gv
 
 " Deleting
-noremap X dd
-noremap dd "_dd
+nnoremap X dd
+nnoremap dd "_dd
