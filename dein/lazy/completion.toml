@@ -30,7 +30,6 @@ call deoplete#custom#source('_', 'converters', [
 [[plugins]]
 repo  = 'Shougo/neopairs.vim'
 on_i  = 1
-depends = ['deoplete.nvim']
 hook_source = '''
 let g:neopairs#enable = 1
 '''
