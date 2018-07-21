@@ -35,6 +35,9 @@ let g:ale_fixers = {
 nmap <silent> [e <Plug>(ale_previous_wrap)
 nmap <silent> ]e <Plug>(ale_next_wrap)
 
+noremap <space>al :ALELint<cr>
+noremap <space>af :ALEFix<cr>
+
 highlight ALEErrorSign ctermbg=none ctermfg=red
 highlight ALEWarningSign ctermbg=none ctermfg=yellow
 
