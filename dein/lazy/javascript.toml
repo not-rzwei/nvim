@@ -26,5 +26,4 @@ let g:deoplete#sources#ternjs#case_insensitive = 1
 let g:deoplete#sources#ternjs#types = 1
 let g:deoplete#sources#ternjs#docs = 1
 let g:deoplete#sources#ternjs#depths = 1
-let g:deoplete#omni_patterns.javascript = '[^. *\t]\.\w*'
 '''
