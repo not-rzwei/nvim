@@ -17,5 +17,5 @@ Arpeggio noremap ev :Files ~/.config/nvim<cr>
 Arpeggio noremap rv :source $MYVIMRC<cr>:echo "Reloaded"<cr>
 
 Arpeggio noremap vp :VimuxPromptCommand<cr>
-Arpeggio noremap vl :VimuxRunLastCommand<cr>
+Arpeggio noremap vo :VimuxRunLastCommand<cr>
 '''
