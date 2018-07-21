@@ -15,6 +15,9 @@ endif
 inoremap <expr> J pumvisible() ? "\<C-N>" : "J"
 inoremap <expr> K pumvisible() ? "\<C-P>" : "K"
 inoremap <expr> L pumvisible() ? "\<C-Y>" : "L"
+inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "<C-k>"
+inoremap <expr> <C-l> pumvisible() ? "\<C-Y>" : "<C-l>"
 '''
 
 hook_source = '''
