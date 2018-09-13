@@ -1,7 +1,0 @@
-[[plugins]]
-repo = 'airblade/vim-gitgutter'
-
-hook_add = '''
-let g:gitgutter_override_sign_column_highlight = 0
-set updatetime=100
-'''

@@ -1,6 +1,0 @@
-[[plugins]]
-repo = 'neoclide/vim-easygit'
-
-hook_add = '''
-let g:easygit_enable_command = 1
-'''

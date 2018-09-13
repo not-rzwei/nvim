@@ -11,15 +11,6 @@ if !dein#load_state(s:path)
 endif
 
 call dein#begin(s:path, expand('<sfile>'))
-
-for file in split(glob('~/.config/nvim/dein/normal/*.toml'), '\n')
-  call dein#load_toml(file, {'lazy': 0})
-endfor
-
-for file in split(glob('~/.config/nvim/dein/lazy/*.toml'), '\n')
-  call dein#load_toml(file, {'lazy': 1})
-endfor
-
 call dein#end()
 call dein#save_state()
 

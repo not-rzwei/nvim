@@ -1,5 +1,0 @@
-[[plugins]]
-repo = 'pearofducks/ansible-vim'
-on_ft = [
-  'jinja', 'yaml'
-]
