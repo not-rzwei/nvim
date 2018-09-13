@@ -6,11 +6,6 @@ repo = 'haya14busa/dein-command.vim'
 
 [[plugins]]
 repo = 'tpope/vim-sensible'
-
-[[plugins]]
-repo = 'ntpeters/vim-better-whitespace'
-hook_add = '''
-let g:strip_whitespace_on_save = 1
 '''
 
 [[plugins]]
@@ -29,6 +24,26 @@ Arpeggio noremap ev :Files ~/.config/nvim<cr>
 Arpeggio noremap rv :source $MYVIMRC<cr>:echo "Reloaded"<cr>
 Arpeggio noremap vp :VimuxPromptCommand<cr>
 Arpeggio noremap vo :VimuxRunLastCommand<cr><Paste>
+'''
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+merged = 0
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+hook_add = '''
+let g:fzf_layout = { 'down': '~30%' }
+let g:fzf_buffers_jump = 1
+nnoremap <space>- :Files<cr>
+nnoremap <space>= :Buffers<cr>
+augroup fzf_buffer
+  autocmd!
+  autocmd FileType fzf tnoremap <buffer> <space>- <c-c>
+  autocmd FileType fzf tnoremap <buffer> <space>= <c-c>
+augroup END
 '''
 
 # looks n feel
@@ -60,3 +75,13 @@ map <space>j <plug>(easymotion-j)
 map <space>k <plug>(easymotion-k)
 map <space>f <plug>(easymotion-bd-f)
 '''
+
+# auto
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo = 'ntpeters/vim-better-whitespace'
+hook_add = '''
+let g:strip_whitespace_on_save = 1
+
