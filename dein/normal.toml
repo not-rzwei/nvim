@@ -1,13 +1,32 @@
 # normal plugins
 
 # core
-[[plugins]]	
+[[plugins]]
 repo = 'haya14busa/dein-command.vim'
 
+[[plugins]]
+repo = 'tpope/vim-sensible'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'ntpeters/vim-better-whitespace'
+hook_add = '''
+let g:strip_whitespace_on_save = 1
+'''
+
 # looks n feel
-[[plugins]]	
+[[plugins]]
 repo = 'morhetz/gruvbox'
 hook_add = '''
 let g:gruvbox_sign_column='bg0'
 '''
 
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+let g:lightline = {
+      \ 'colorscheme': 'gruvbox',
+      \ }
+'''
