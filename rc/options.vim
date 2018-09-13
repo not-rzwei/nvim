@@ -1,5 +1,5 @@
 " Eye
-colorscheme monokai_pro
+colorscheme gruvbox
 set background=dark
 set cursorline
 set number

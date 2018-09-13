@@ -11,6 +11,10 @@ if !dein#load_state(s:path)
 endif
 
 call dein#begin(s:path, expand('<sfile>'))
+
+call dein#load_toml('~/.config/nvim/dein/normal.toml', {'lazy': 0})
+call dein#load_toml('~/.config/nvim/dein/lazy.toml', {'lazy': 1})
+
 call dein#end()
 call dein#save_state()
 
