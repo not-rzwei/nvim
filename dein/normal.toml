@@ -37,3 +37,18 @@ let g:lightline = {
       \ },
       \ }
 '''
+
+# navigation
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+hook_add = '''
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_startofline = 1
+let g:EasyMotion_use_smartsign_us = 1
+
+map f <plug>(easymotion-bd-f2)
+map <space>w <plug>(easymotion-wl)
+map <space>j <plug>(easymotion-j)
+map <space>k <plug>(easymotion-k)
+map <space>f <plug>(easymotion-bd-f)
+'''
