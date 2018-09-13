@@ -8,12 +8,27 @@ repo = 'haya14busa/dein-command.vim'
 repo = 'tpope/vim-sensible'
 
 [[plugins]]
-repo = 'tpope/vim-fugitive'
-
-[[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
 hook_add = '''
 let g:strip_whitespace_on_save = 1
+'''
+
+[[plugins]]
+repo = 'kana/vim-arpeggio'
+hook_add = '''
+call arpeggio#load()
+let g:arpeggio_timeoutlen = 60
+
+Arpeggio inoremap jk  <Esc>
+Arpeggio vnoremap jk  <Esc>
+Arpeggio noremap we :w<cr>
+Arpeggio noremap wq :wq<cr>
+Arpeggio noremap qe :q<cr>
+Arpeggio noremap q1 :q!<cr>
+Arpeggio noremap ev :Files ~/.config/nvim<cr>
+Arpeggio noremap rv :source $MYVIMRC<cr>:echo "Reloaded"<cr>
+Arpeggio noremap vp :VimuxPromptCommand<cr>
+Arpeggio noremap vo :VimuxRunLastCommand<cr><Paste>
 '''
 
 # looks n feel
