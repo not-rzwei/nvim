@@ -3,9 +3,11 @@
 # core
 [[plugins]]
 repo = 'haya14busa/dein-command.vim'
-
 [[plugins]]
 repo = 'tpope/vim-sensible'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'kana/vim-arpeggio'
@@ -82,5 +84,4 @@ repo = 'ntpeters/vim-better-whitespace'
 hook_add = '''
 let g:strip_whitespace_on_save = 1
 '''
-
 
