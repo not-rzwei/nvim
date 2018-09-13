@@ -71,25 +71,6 @@ set modelines=0
 set nomodeline
 autocmd MyAutoCmd BufRead,BufWritePost *.txt setlocal modelines=5 modeline
 
-" Enable folding.
-set foldenable
-set foldmethod=indent
-set foldcolumn=1
-set fillchars=vert:\|
-set commentstring=%s
-
-" FastFold
-autocmd MyAutoCmd TextChangedI,TextChanged *
-      \ if &l:foldenable && &l:foldmethod !=# 'manual' |
-      \   let b:foldmethod_save = &l:foldmethod |
-      \   let &l:foldmethod = 'manual' |
-      \ endif
-autocmd MyAutoCmd BufWritePost *
-      \ if &l:foldmethod ==# 'manual' && exists('b:foldmethod_save') |
-      \   let &l:foldmethod = b:foldmethod_save |
-      \   execute 'normal! zx' |
-      \ endif
-
 " Disable paste.
 autocmd MyAutoCmd InsertLeave *
       \ if &paste | setlocal nopaste | echo 'nopaste' | endif |
